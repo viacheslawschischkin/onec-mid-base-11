@@ -10,7 +10,7 @@
   <name>вш_КонтактныеЛица</name>
   <synonym>
     <key>ru</key>
-    <value>Вш контактные лица</value>
+    <value>Контактные лица</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.вш_КонтактныеЛица.StandardAttribute.Code</inputByString>
@@ -46,6 +46,9 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.вш_КонтактныеЛица.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.вш_КонтактныеЛица.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.вш_КонтактныеЛица.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="9a755389-6ce0-4ab1-b0da-fa3b67b30408">
     <name>КонтактныйТелефон</name>
     <synonym>
@@ -60,6 +63,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -105,12 +109,40 @@
       <value>Должность</value>
     </synonym>
     <type>
-      <types>CatalogRef.вш_КонтактныеЛица</types>
+      <types>CatalogRef.вш_Должности</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="54f42fbd-81a0-4807-b773-84c1e6d8c409">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab40872d-e5c1-4c3a-9825-9e58f341f12b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6aec3c03-6bc8-49b6-827b-e08a218ea9cc">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
